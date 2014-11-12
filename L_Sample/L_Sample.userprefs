@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.05d3c2fe00611472" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="L_Sample/MainActivity.cs">
+    <Files>
+      <File FileName="L_Sample/MainActivity.cs" Line="23" Column="23" />
+      <File FileName="L_Sample/Resources/values-v21/Styles.xml" Line="54" Column="54" />
+      <File FileName="L_Sample/Resources/values/Colors.xml" Line="13" Column="13" />
+      <File FileName="L_Sample/Properties/AndroidManifest.xml" Line="70" Column="70" />
+      <File FileName="L_Sample/Resources/values/Styles.xml" Line="11" Column="11" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.L__Sample MonoForAntroid.PreferredDevice="SmartPhone" MonoForAntroid.PreferredTheme="AppTheme" />
+</Properties>

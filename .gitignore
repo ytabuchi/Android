@@ -140,6 +140,9 @@ packages/
 # (and the packages folder if the line above has been uncommented)
 !packages/build/
 
+# Xamarin Component Directory
+Components/
+
 # Windows Azure Build Output
 csx/
 *.build.csdef
@@ -187,3 +190,4 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
+/XF_SearchBarSample/packages

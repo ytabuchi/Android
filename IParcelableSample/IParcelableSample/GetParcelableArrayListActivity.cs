@@ -22,22 +22,22 @@ namespace IParcelableSample
             SetContentView(Resource.Layout.GetParcelableArrayList);
             var list = FindViewById<ListView>(Resource.Id.listView1);
 
-            // SimpleListItem2‚Ì‚½‚ß‚É—pˆÓ‚µ‚½List<TableItem>‚ğƒNƒŠƒAB
+            // SimpleListItem2ã®ãŸã‚ã«ç”¨æ„ã—ãŸList<TableItem>ã‚’ã‚¯ãƒªã‚¢ã€‚
             tableItems.Clear();
 
             var intent = this.Intent;
             if (intent != null && intent.HasExtra("data"))
             {
                 var data = intent.GetParcelableArrayListExtra("data");
-                // ó‚¯æ‚Á‚½ƒCƒ“ƒeƒ“ƒg‚ÍList<IParcelable>‚Ì‚½‚ßATableItemParcelable‚ÅƒLƒƒƒXƒg‚µ‚ÄList<TableItem>‚ÉŠi”[‚µ‚Ä‚¢‚­B
+                // å—ã‘å–ã£ãŸã‚¤ãƒ³ãƒ†ãƒ³ãƒˆã¯List<IParcelable>ã®ãŸã‚ã€TableItemParcelableã§ã‚­ãƒ£ã‚¹ãƒˆã—ã¦List<TableItem>ã«æ ¼ç´ã—ã¦ã„ãã€‚
                 foreach (var item in data)
                 {
                     tableItems.Add(((TableItemParcelable)item).Item);
                 }
             }
 
-            // SimpleListItem2 ‚ğg—p‚·‚éAdapterƒNƒ‰ƒX‚ğ—pˆÓ‚µAƒNƒ‰ƒX“à‚ÅŠe—v‘f‚ÌŠ„‚è“–‚Ä‚ğs‚¤B
-            // Ú×‚ÍSimpleListItem2Adapter‚ÌSummary‚ÌƒŠƒ“ƒN‚ğQÆ‚Ì‚±‚ÆB
+            // SimpleListItem2 ã‚’ä½¿ç”¨ã™ã‚‹Adapterã‚¯ãƒ©ã‚¹ã‚’ç”¨æ„ã—ã€ã‚¯ãƒ©ã‚¹å†…ã§å„è¦ç´ ã®å‰²ã‚Šå½“ã¦ã‚’è¡Œã†ã€‚
+            // è©³ç´°ã¯SimpleListItem2Adapterã®Summaryã®ãƒªãƒ³ã‚¯ã‚’å‚ç…§ã®ã“ã¨ã€‚
             list.Adapter = new SimpleListItem2Adapter(this, tableItems);
             
         }

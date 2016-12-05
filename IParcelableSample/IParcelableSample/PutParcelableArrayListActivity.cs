@@ -26,11 +26,11 @@ namespace IParcelableSample
 
             button.Click += (sender, e) =>
             {
-                // TableItem�͂��̂܂܂ł͓n���Ȃ��̂ŁA��x�f�[�^���i�[����B
+                // TableItemはそのままでは渡せないので、一度データを格納する。
                 var item = new TableItemParcelable(nameText.Text, DateTime.Parse(timeText.Text));
                 TableItems.Add(item);
 
-                // PutParcelableArrayListExtra(string name, List<IParcelable> value)��List<IParcelable>���K�v�Ȃ���TableItem���ڂ��ւ���
+                // PutParcelableArrayListExtra(string name, List<IParcelable> value)はList<IParcelable>が必要なためTableItemを移し替える
                 List<IParcelable> values = new List<IParcelable>();
                 foreach (var x in TableItems)
                 {

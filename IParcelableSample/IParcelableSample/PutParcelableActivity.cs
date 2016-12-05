@@ -15,7 +15,7 @@ namespace IParcelableSample
     [Activity(Label = "PutParcelable")]
     public class PutParcelableActivity : Activity
     {
-        // ActivityResult‚ğˆ—‚·‚é‚½‚ß‚Ì’è”
+        // ActivityResultã‚’å‡¦ç†ã™ã‚‹ãŸã‚ã®å®šæ•°
         const int REQUEST_CODE_TABLEITEM = 1;
 
         protected override void OnCreate(Bundle bundel)
@@ -31,13 +31,13 @@ namespace IParcelableSample
                 var item = new TableItemParcelable(nameText.Text, DateTime.Parse(timeText.Text));
                 var intent = new Intent(this, typeof(GetParcelableActivity));
                 intent.PutExtra("data", item);
-                //StartActivity(intent); // –ß‚Á‚Ä‚«‚½Parcelable‚ğ–³‹‚·‚é
-                StartActivityForResult(intent, REQUEST_CODE_TABLEITEM); // –ß‚Á‚Ä‚«‚½Parcelable‚ğˆ—‚·‚é
+                //StartActivity(intent); // æˆ»ã£ã¦ããŸParcelableã‚’ç„¡è¦–ã™ã‚‹
+                StartActivityForResult(intent, REQUEST_CODE_TABLEITEM); // æˆ»ã£ã¦ããŸParcelableã‚’å‡¦ç†ã™ã‚‹
             };
         }
 
         /// <summary>
-        /// –ß‚Á‚Ä‚«‚½Parcelable‚ğˆ—‚·‚éƒƒ\ƒbƒh
+        /// æˆ»ã£ã¦ããŸParcelableã‚’å‡¦ç†ã™ã‚‹ãƒ¡ã‚½ãƒƒãƒ‰
         /// </summary>
         /// <param name="requestCode"></param>
         /// <param name="resultCode"></param>
@@ -53,7 +53,7 @@ namespace IParcelableSample
                     {
                         var item = data.GetParcelableExtra("returned_data") as TableItemParcelable;
                         Toast.MakeText(this,
-                          $"{item.Item.Name}/{item.Item.Time} ‚ğó‚¯æ‚è‚Ü‚µ‚½",
+                          $"{item.Item.Name}/{item.Item.Time} ã‚’å—ã‘å–ã‚Šã¾ã—ãŸ",
                           ToastLength.Long).Show();
                     }
                     break;

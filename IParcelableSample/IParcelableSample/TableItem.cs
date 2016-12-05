@@ -21,10 +21,10 @@ namespace IParcelableSample
     }
 
     /// <summary>
-    /// TableItem‚ğŒp³‚µ‚½Parcelable‚ÈƒAƒ_ƒvƒ^[ƒNƒ‰ƒX
+    /// TableItemã‚’ç¶™æ‰¿ã—ãŸParcelableãªã‚¢ãƒ€ãƒ—ã‚¿ãƒ¼ã‚¯ãƒ©ã‚¹
     /// </summary>
     /// <remarks>
-    /// Ql‘—¿FXamarin.Android‚Å‰æ–Ê‘JˆÚ‚ğs‚¤‚É‚ÍH - Build Insider http://www.buildinsider.net/mobile/xamarintips/0004
+    /// å‚è€ƒè³‡æ–™ï¼šXamarin.Androidã§ç”»é¢é·ç§»ã‚’è¡Œã†ã«ã¯ï¼Ÿ - Build Insider http://www.buildinsider.net/mobile/xamarintips/0004
     /// </remarks>
     public class TableItemParcelable : Java.Lang.Object, IParcelable
     {
@@ -41,7 +41,7 @@ namespace IParcelableSample
             return 0;
         }
 
-        // CreateFromParcel‚Å“Ç‚İ‚Ş‡”Ô‚ğŠÔˆá‚¦‚È‚¢‚æ‚¤‚É’ˆÓ‚·‚éB
+        // CreateFromParcelã¨CreateFromParcelã§åŒã˜ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æ‰±ã†ã“ã¨ã€‚
         public void WriteToParcel(Parcel dest, [GeneratedEnum] ParcelableWriteFlags flags)
         {
             dest.WriteString(Item.Name);
@@ -53,22 +53,22 @@ namespace IParcelableSample
         {
             return new TableItemParcelableCreator();
         }
-    }
 
-    public class TableItemParcelableCreator : Java.Lang.Object, IParcelableCreator
-    {
-        // WriteToParcel‚Åw’è‚µ‚Ä‚¢‚é‘‚«‚İ‡‚É“Ç‚İ‚ŞB
-        public Java.Lang.Object CreateFromParcel(Parcel source)
+        class TableItemParcelableCreator : Java.Lang.Object, IParcelableCreator
         {
-            TableItemParcelable item = new TableItemParcelable(
-                source.ReadString(), 
-                DateTime.Parse(source.ReadString()));
-            return item;
-        }
+            // CreateFromParcelã¨CreateFromParcelã§åŒã˜ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æ‰±ã†ã“ã¨ã€‚
+            public Java.Lang.Object CreateFromParcel(Parcel source)
+            {
+                TableItemParcelable item = new TableItemParcelable(
+                    source.ReadString(),
+                    DateTime.Parse(source.ReadString()));
+                return item;
+            }
 
-        public Java.Lang.Object[] NewArray(int size)
-        {
-            return new Java.Lang.Object[size];
+            public Java.Lang.Object[] NewArray(int size)
+            {
+                return new Java.Lang.Object[size];
+            }
         }
     }
 }

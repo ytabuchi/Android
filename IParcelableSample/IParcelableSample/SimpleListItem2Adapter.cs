@@ -13,11 +13,11 @@ using Android.Widget;
 namespace IParcelableSample
 {
     /// <summary>
-    /// ListView‚ÌAdapter‚Å‚·B
+    /// ListViewã®Adapterã§ã™ã€‚
     /// </summary>
     /// <remarks>
-    /// Ql‘—¿FPart 3 - Customizing a ListView's Appearance - Xamarin https://developer.xamarin.com/guides/android/user_interface/working_with_listviews_and_adapters/part_3_-_customizing_a_listview's_appearance/
-    /// SampleFhttps://github.com/xamarin/monodroid-samples/tree/master/BuiltInViews
+    /// å‚è€ƒè³‡æ–™ï¼šPart 3 - Customizing a ListView's Appearance - Xamarin https://developer.xamarin.com/guides/android/user_interface/working_with_listviews_and_adapters/part_3_-_customizing_a_listview's_appearance/
+    /// Sampleï¼šhttps://github.com/xamarin/monodroid-samples/tree/master/BuiltInViews
     /// </remarks>
     public class SimpleListItem2Adapter : BaseAdapter<TableItem>
     {

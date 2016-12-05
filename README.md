@@ -3,5 +3,10 @@ Android
 
 Xamarin.Android sample projects
 
-L_Sample: This project just shows how use /Resouces/values-v21/Styles.xml
-Wear_Sample: This project is a xamarin clone from Nikkei Software's article
+IParcelableSample: it shows how to pass List<T> data between activities.
+
+L_Sample: it shows how use /Resouces/values-v21/Styles.xml
+
+AppCompatSample: it shows how to use ActionBar with Android.Support.V4
+
+MaterialDesignSample: it includes Xamarin.UITest for Android.

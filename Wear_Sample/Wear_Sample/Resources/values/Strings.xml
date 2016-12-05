@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-  <string name="Hello">Notification!!</string>
-  <string name="ApplicationName">Wear02</string>
-  <string name="AlertTitle">アラート</string>
-  <string name="AlertMessage">左にスワイプしてください</string>
-  <string name="Reply">リプライ</string>
-</resources>

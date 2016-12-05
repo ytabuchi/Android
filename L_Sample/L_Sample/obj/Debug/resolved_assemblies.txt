@@ -1,3 +1,0 @@
-/Users/ytabuchi/Documents/Projects/L_Sample/L_Sample/bin/Debug/L_Sample.dll
-/Users/ytabuchi/Documents/Projects/L_Sample/packages/Xamarin.Android.Support.v13.20.0.0.4/lib/MonoAndroid32/Xamarin.Android.Support.v13.dll
-/Users/ytabuchi/Documents/Projects/L_Sample/packages/Xamarin.Android.Support.v4.20.0.0.4/lib/MonoAndroid32/Xamarin.Android.Support.v4.dll

@@ -1,5 +1,10 @@
-
 # Created by https://www.gitignore.io/api/visualstudio,xamarinstudio,windows,osx
+
+### Secret keys###
+
+ApiKeys.cs
+Secrets.cs
+
 
 ### XamarinStudio ###
 bin/
@@ -107,6 +112,7 @@ artifacts/
 *_i.c
 *_p.c
 *_i.h
+*.bak
 *.ilk
 *.meta
 *.obj

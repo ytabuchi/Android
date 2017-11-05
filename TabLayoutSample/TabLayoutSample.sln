@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActionBarTab", "ActionBarTab\ActionBarTab.csproj", "{ED4795FF-1A0A-4ABE-9872-53E4A3D73260}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabLayoutTab", "TabLayoutTab\TabLayoutTab.csproj", "{D472750C-51D8-47C6-8D76-BDF9C5BB258F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{ED4795FF-1A0A-4ABE-9872-53E4A3D73260}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED4795FF-1A0A-4ABE-9872-53E4A3D73260}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED4795FF-1A0A-4ABE-9872-53E4A3D73260}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D472750C-51D8-47C6-8D76-BDF9C5BB258F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D472750C-51D8-47C6-8D76-BDF9C5BB258F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D472750C-51D8-47C6-8D76-BDF9C5BB258F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D472750C-51D8-47C6-8D76-BDF9C5BB258F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
